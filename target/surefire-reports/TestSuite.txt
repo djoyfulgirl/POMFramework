@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 80.106 s <<< FAILURE! - in TestSuite
+TestCase_One(TestCaseExecution.LoginTest)  Time elapsed: 10.951 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at TestCaseExecution.LoginTest.TestCase_One(LoginTest.java:80)
+

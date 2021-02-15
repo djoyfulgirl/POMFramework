@@ -1,0 +1,87 @@
+
+
+1. what is a framework :  example: house : group of people, chairs, TV, freeze ....
+// selenium framework : application
+
+1. coding language: java
+2. drivers : open a browser : hit the url : run the application
+3. we have capture xpaths of webelement of an application
+4. creating test cases : automating manual test cases into selenium script
+5. executing the test cases with the help of TESTNG
+6. taking screenshots when test case fails
+7. advanced reporting
+8. commiting the code : github
+9. running the code in jenkins tool: CI tool
+
+//selenium: is a tool
+//there are different frameworks: POM, BDD, DATA DRIVEN, KEYWORD, HYBRID, ROBOT, CODED UI, TDD
+
+
+//POM: 
+1. It is page object model
+2. it is a design pattern(paging)
+
+1. base class : where browser setup will be written
+2. pageobjectrepository  : we capture all the xpaths, we create webelements and initialize with pagefactory with teh help of constructor, we create methods and use those methods in test cases
+3. Will create a test cases
+
+1. login page
+2. create quiz
+
+//************************************************************
+
+Advanced Selenium concept
+pom : design a framework , Extended report, logs
+
+1.pom design : done
+2.Advanced Extended Report : done
+3. Logs
+4.screenshots : done
+
+
+Not done: 
+1. BDD design
+2. Reports
+1.Data driven(data provider)
+2.logs
+1.jenkins
+2.github
+
+//=====================================================================================
+pom framwork :
+1. base class : browsersetup
+2. pageobjectory : page class and captured all xpaths, created webelements, created methods and last we have iniliazed wevdriver and pagefactory with teh help
+of constructor
+3. created a Test cases creation : created test using testng anotations
+
+BDD framework :
+1. base class : browsersetup
+2. pageobjectory : page class and captured all xpaths, created webelements, created methods and last we have iniliazed wevdriver and pagefactory with teh help
+of constructor
+3. created a Test cases creation : no use of testng
+4. feature file/s : it will have feature name(mandatory), scenario/scenario outline, it will have tags, it will have background
+these feature files will be converted to step definations: ie is the test cases
+scenario/scenario outline : scenario will not have examples wherein scenario outline will have examples,
+scenarios/scenario outline will be defined with the help of keywords @given, then, and and when
+tags: if you have multiple scenario and you want to execute only one scenario from that feature file,
+you can use tags symbol @name of the scenario
+background: in order to get reed of multiple steps
+example: if you ahve an application: you are doing multiple execution with same login steps,
+you can use background to control that steps
+5. runner class : we will use it for run the test cases, generating reports
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a.
