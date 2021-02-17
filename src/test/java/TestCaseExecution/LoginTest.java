@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -26,6 +27,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import BaseClass.BrowserSetupOne;
 import junit.framework.Assert;
+import logs_concept.log;
 import pageobjectory.LoginPage;
 
 public class LoginTest {
@@ -69,7 +71,10 @@ public class LoginTest {
         prop = new Properties();
 		prop.load(fileInput);
 	    driver = BrowserSetupOne.StartBrowser(prop.getProperty("browserName"),prop.getProperty("url"));
-
+		DOMConfigurator.configure("C:\\Users\\hp\\workspace\\POMFramework_Concepts\\src\\main\\java\\logs_concept\\log4j.xml");
+		log.startTestCase("Starting Execution");
+		log.info("Chrome Opened"); 
+		log.info("Url triggered"); 
 	}
 	
 	@Test
@@ -77,6 +82,7 @@ public class LoginTest {
 		test = extent.createTest("TestCase_One");
 		loginpage = new LoginPage(driver);	
 		loginpage.loginToPage();
+		log.info("Logged In Successfully");
 		Assert.assertFalse(true);
 		Thread.sleep(2000);
 	}
